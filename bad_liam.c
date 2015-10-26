@@ -18,11 +18,13 @@ int main(void)
 
 void bad_naughty_function(void)
 {
-	int data[5] = {0};
+	int data[][3] = {{11, 13}, {17, 19}, {23}};
 
-	data[15] = 7;
+	data[15][0] = 7;
 
-	printf("%d\n", data[14]);
+	printf("data is %zd big\n", sizeof(data));
+
+	printf("%d\n", data[14][0]);
 }
 
 
