@@ -1,5 +1,5 @@
 
-CFLAGS=-std=c11 -Wall -Wextra -pedantic -Werror
+include ../Makefile
 
 quaddie: quaddie.c
 	cc $(CFLAGS) quaddie.c -o quaddie -lm
