@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 struct card {
-	int rank;
+	char rank;
 	char suit;
 };
 
