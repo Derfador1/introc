@@ -6,6 +6,8 @@ struct card {
 	char suit;
 };
 
+void print_card(struct card);
+
 int main(void)
 {
 
@@ -14,6 +16,10 @@ int main(void)
 	three_of_hearts.suit = 'H';
 	three_of_hearts.rank = 3;
 
-	printf("%d of %c\n", three_of_hearts.rank, three_of_hearts.suit);
+	print_card(three_of_hearts);
+}
 
+void print_card(struct card the_card)
+{
+	printf("%d of %c\n", the_card.rank, the_card.suit);
 }
