@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 struct card {
-	char rank;
-	char suit;
+	int rank:5;
+	int suit:2;
 };
 
 int main(void)
