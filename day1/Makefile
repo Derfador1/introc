@@ -26,7 +26,11 @@ b: Makefile quaddie.c
 
 
 
+.PHONY: clean
 
+clean:
+	@echo Cleaning
+	-rm *.o quaddie namer ageist forish
 
 
 
