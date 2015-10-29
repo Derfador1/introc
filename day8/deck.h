@@ -4,6 +4,8 @@
 
 #include "card.h"
 
+extern char *deck_color;
+
 struct deck {
 	struct card cards[52];
 	int cards_used;
