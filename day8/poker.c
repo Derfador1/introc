@@ -1,11 +1,12 @@
 
-#include "card.c"
+#include "card.h"
+#include "deck.h"
 
 int main(void)
 {
-	struct card three_of_hearts;
+	struct deck bicycle;
 
-	three_of_hearts.rank = 3;
-	three_of_hearts.suit = "Hearts";
-	print_card(three_of_hearts);
+	bicycle.cards[0].rank = 3;
+	bicycle.cards[0].suit = "Hearts";
+	print_card(bicycle.cards[0]);
 }

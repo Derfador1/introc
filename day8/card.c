@@ -1,12 +1,7 @@
 
+#include "card.h"
+
 #include <stdio.h>
-
-struct card {
-	int rank;
-	char *suit;
-};
-
-void print_card(struct card);
 
 void print_card(struct card the_card)
 {
