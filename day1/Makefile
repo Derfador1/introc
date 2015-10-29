@@ -1,5 +1,39 @@
 
+
+
+target: a
+	echo rm [a-f]
+
+a: f
+	cp f a
+
+f: e d c
+	touch f
+
+e:
+	touch e
+
+d: b
+	cp b d
+
+c: b
+	cp b c
+
+b: Makefile quaddie.c
+	cat Makefile > b
+	cat quaddie.c >> b
+
+
+
+
+
+
+
+
+quaddie: quaddie.o
+	cc $(CFLAGS) quaddie.o -o quaddie -lm
+
 include ../Makefile
 
-quaddie: quaddie.c
-	cc $(CFLAGS) quaddie.c -o quaddie -lm
+quaddie.o: quaddie.c
+	cc $(CFLAGS) -c quaddie.c 
