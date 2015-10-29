@@ -31,9 +31,10 @@ b: Makefile quaddie.c
 
 
 quaddie: quaddie.o
-	cc $(CFLAGS) quaddie.o -o quaddie -lm
+	cc $(CFLAGS) $^ -o $@ -lm
 
 include ../Makefile
 
 quaddie.o: quaddie.c
-	cc $(CFLAGS) -c quaddie.c 
+	cc $(CFLAGS) -c $^
+
