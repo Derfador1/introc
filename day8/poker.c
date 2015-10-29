@@ -10,10 +10,11 @@ int main(void)
 
 	const int fievel = 3;
 
-	printf("fievel: %d\n", fievel);
-	// FAILS due to fievel being const
-	fievel = 4;
+	int *sneaky = (int*)&fievel;
 
+	*sneaky = 4;
+
+	printf("fievel: %d\n", fievel);
 
 	bicycle.cards[0].rank = 3;
 	bicycle.cards[0].suit = HEARTS;
