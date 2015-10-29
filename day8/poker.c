@@ -21,6 +21,7 @@ int main(void)
 	print_card(bicycle.cards[0]);
 
 	printf("What a lovely %s deck\n", deck_color);
-	deck_color = "Puce";
+	// FAILS since the pointer itself is const
+	//deck_color = "Puce";
 	printf("What an ugly %s deck\n", deck_color);
 }
