@@ -1,4 +1,4 @@
 
 #include "deck.h"
 
-char *deck_color = "Blue";
+const char *deck_color = "Blue";

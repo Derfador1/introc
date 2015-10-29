@@ -4,7 +4,7 @@
 
 #include "card.h"
 
-extern char *deck_color;
+extern const char *deck_color;
 
 struct deck {
 	struct card cards[52];
