@@ -12,4 +12,5 @@ int main(void)
 	}
 
 	print_deck(bicycle);
+	free_deck(bicycle);
 }

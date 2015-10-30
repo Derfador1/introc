@@ -23,6 +23,10 @@ struct deck *make_deck(void)
 	return pile;
 }
 
+void free_deck(struct deck *pile)
+{
+	free(pile);
+}
 
 void print_deck(struct deck *pile)
 {

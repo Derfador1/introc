@@ -16,6 +16,8 @@ struct deck {
 
 struct deck *make_deck(void);
 
+void free_deck(struct deck *);
+
 void print_deck(struct deck *);
 
 #endif
