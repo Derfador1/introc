@@ -6,10 +6,10 @@
 
 int main(void)
 {
-	struct deck bicycle;
+	struct deck *bicycle;
+	if(!(bicycle = make_deck())) {
+		return 1;
+	}
 
-	bicycle.cards[0].rank = 3;
-	bicycle.cards[0].suit = HEARTS;
-
-	print_deck(&bicycle);
+	print_deck(bicycle);
 }

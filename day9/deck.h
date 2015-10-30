@@ -4,10 +4,17 @@
 
 #include "card.h"
 
+/* Array of cards
+ * Only cards from cards_used to
+ * index 51 are valid cards in
+ * the deck.
+ */
 struct deck {
 	struct card cards[52];
 	int cards_used;
 };
+
+struct deck *make_deck(void);
 
 void print_deck(struct deck *);
 
