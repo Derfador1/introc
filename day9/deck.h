@@ -4,11 +4,11 @@
 
 #include "card.h"
 
-extern const char * const deck_color;
-
 struct deck {
 	struct card cards[52];
 	int cards_used;
 };
+
+void print_deck(struct deck *);
 
 #endif
